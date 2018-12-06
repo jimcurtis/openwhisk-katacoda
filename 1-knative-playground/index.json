@@ -1,0 +1,38 @@
+{
+    "icon": "fa-openshift",
+    "title": "Playground (Knative on OpenShift 3.11)",
+    "description": "Installs Knative on OpenShift so you can play with it",
+    "pathwayTitle": "Knative on OpenShift Playground",
+    "difficulty": "beginner",
+    "time": "60 minutes",
+    "backend": {
+        "imageid": "openshift-3-11",
+        "port": 8443
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboard": "Dashboard",
+        "uilayout": "editor-terminal",
+        "uisettings": "java",
+        "uieditorpath": "/root/projects/knative"
+    },
+    "details": {
+        "steps": [{
+            "title": "OpenShift Knative Playground",
+            "text": "tips.md"
+        }],
+        "intro": {
+            "courseData": "env-init.sh",
+            "code": "set-env.sh",
+            "text": "intro.md"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+          "host01": [
+              { "file": "setup-environment.sh", "target": "/root/", "chmod": "+x"}
+          ]
+        }
+    }
+}
