@@ -1,0 +1,44 @@
+{
+    "icon": "fa-openshift",
+    "title": "KubeCon Demo (Knative on OpenShift 3.11)",
+    "description": "KubeCon Knative Demo",
+    "pathwayTitle": "KubeCon Knative Demo on OpenShift",
+    "difficulty": "beginner",
+    "time": "30 minutes",
+    "backend": {
+        "imageid": "openshift-3-11",
+        "port": 8443
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [
+            {
+                "name": "OpenShift Console",
+                "port": 8443
+            }
+        ],
+        "uilayout": "editor-terminal",
+        "uisettings": "java",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+        "uieditorpath": "/root/projects/knative"
+    },
+    "details": {
+        "steps": [{
+            "title": "OpenShift Knative KubeCon Demo",
+            "text": "tips.md"
+        }],
+        "intro": {
+            "courseData": "env-init.sh",
+            "code": "set-env.sh",
+            "text": "intro.md"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+          "host01": [
+              { "file": "setup-environment.sh", "target": "/root/", "chmod": "+x"}
+          ]
+        }
+    }
+}
