@@ -80,3 +80,15 @@ Now, to see that the service is actually running, we're going to send a request 
 we'll get the domain of the KService:
 
 ``oc get kservice``{{execute}}
+
+And we will need the ingress gateway IP address which we can get via:
+
+``export IP_ADDRESS=$(oc get svc knative-ingressgateway --namespace istio-system --output 'jsonpath={.status.loadBalancer.ingress[0].ip}')``{{execute}}
+
+``echo $IP_ADDRESS``{{execute}}
+
+Now we combine this together with the following command:
+
+``curl -H "Host: dumpy.myproject.example.com" "http://${IP_ADDRESS}:32380/health"
+
+If this works, you are ready to move on to the next step.
