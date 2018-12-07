@@ -24,8 +24,7 @@
     },
     "details": {
         "steps": [{
-            "title": "OpenShift Knative KubeCon Demo",
-            "text": "tips.md"
+            "title": "OpenShift Knative KubeCon Demo"
         }],
         "intro": {
             "courseData": "env-init.sh",
