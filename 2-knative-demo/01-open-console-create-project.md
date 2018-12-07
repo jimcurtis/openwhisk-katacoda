@@ -11,7 +11,8 @@ please use `admin/admin`.
 
 ![Web Console Login](assets/login.png)
 
-After you have authenticated to the web console, you will be presented the default Service Catalog view.  In the upper
+After you have authenticated to the web console, you will either be presented with the default Service Catalog view or
+the Application Console view.  If you are in the Service Catalog view, in the upper
 left corner there is a pull-down next to "Service Catalog" where you can choose the "Application Console" view.
 
 ![Service Catalog Pull-down](assets/application-console.png)
