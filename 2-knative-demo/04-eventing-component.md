@@ -94,7 +94,15 @@ Behind the scenes there is a `SubscriptionController` which is doing the wiring 
 
 ``oc apply -f eventing/030-subscription.yaml``{{execute}}
 
-And by that, events coming through our source are now dispatched via a channel to the service that we created in the beginning of this tutorial. We can actually see
-the events by having a look at the logs of our application.
+And by that, events coming through our source are now dispatched via a channel to the service that we created in the 
+beginning of this tutorial. We can actually see the events by having a look at the logs of our application.  First, let's
+see if the pod is running.
+
+``oc get pods``{{execute}}
+
+Then, let's use the `oc logs` command to show the logs for the container within the pod.
 
 ``oc logs -c user-container --since=1m $(oc get pods | grep -m1 -E "dumpy.*deployment.*Running" | awk '{print $1}')``{{execute}}
+
+And you can't watch the deployments via the OpenShift Web Console if you go to that tab/window and click on the Montoring
+tab.  You will see the Pods as well as the Deployments.
