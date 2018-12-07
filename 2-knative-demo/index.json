@@ -27,6 +27,10 @@
             {
                 "title": "Step 1 - Open Console & Create Project",
                 "text": "01-open-console-create-project.md"
+            },
+            {
+                "title": "Step 2 - Build Component",
+                "text": "02-build-component.md"
             }
         ],
         "intro": {
