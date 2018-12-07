@@ -15,7 +15,12 @@
             {
                 "name": "OpenShift Console",
                 "port": 8443
+            },
+            {
+                "name": "Kiali Dashboard", 
+                "href": "http://kiali-istio-system.[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"
             }
+      
         ],
         "uilayout": "editor-terminal",
         "uisettings": "java",
