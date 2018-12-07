@@ -48,6 +48,10 @@
             {
                 "title": "Step 5 - Releasing & Traffic Splitting",
                 "text": "05-releasing-traffic-splitting.md"
+            },
+            {
+                "title": "Step 6 - Scaling Up & Down",
+                "text": "06-scaling-up-down.md"
             }
         ],
         "intro": {
