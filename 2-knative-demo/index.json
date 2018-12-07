@@ -35,6 +35,10 @@
             {
                 "title": "Step 3 - Serving Component",
                 "text": "03-serving-component.md"
+            },
+            {
+                "title": "Step 4 - Eventing Component",
+                "text": "04-eventing-component.md"
             }
         ],
         "intro": {
