@@ -23,9 +23,12 @@
         "uieditorpath": "/root/projects/knative"
     },
     "details": {
-        "steps": [{
-            "title": "OpenShift Knative KubeCon Demo"
-        }],
+        "steps": [
+            {
+                "title": "Step 1 - Open Console & Create Project",
+                "text": "01-open-console-create-project.md"
+            }
+        ],
         "intro": {
             "courseData": "env-init.sh",
             "code": "set-env.sh",
