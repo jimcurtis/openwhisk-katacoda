@@ -89,6 +89,6 @@ And we will need the ingress gateway IP address which we can get via:
 
 Now we combine this together with the following command:
 
-``curl -H "Host: dumpy.myproject.example.com" "http://${IP_ADDRESS}:32380/health"
+``curl -H "Host: dumpy.myproject.example.com" "http://${IP_ADDRESS}/health"``{{execute}}
 
 If this works, you are ready to move on to the next step.
