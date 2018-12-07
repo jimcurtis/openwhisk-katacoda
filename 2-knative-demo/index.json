@@ -31,6 +31,10 @@
             {
                 "title": "Step 2 - Build Component",
                 "text": "02-build-component.md"
+            },
+            {
+                "title": "Step 3 - Serving Component",
+                "text": "03-serving-component.md"
             }
         ],
         "intro": {
