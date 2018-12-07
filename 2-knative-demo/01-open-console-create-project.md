@@ -36,8 +36,8 @@ Now, go back to the Terminal tab and set the CLI to point to the newly created p
 
 And allow access to the new project with these 2 commands:
 
-``oc adm policy add-scc-to-user anyuid -z default -n myproject``{{execute}
+``oc adm policy add-scc-to-user anyuid -z default -n myproject``{{execute}}
 
-``oc adm policy add-scc-to-user privileged -z default -n myproject``{{execute}
+``oc adm policy add-scc-to-user privileged -z default -n myproject``{{execute}}
 
 Now, you are ready to move on to the next step in the demo.
