@@ -142,3 +142,4 @@ oc import-image -n openshift golang:1.11 --from=centos/go-toolset-7-centos7 --co
 
 # show all the pods
 oc get pods --all-namespaces
+cd myproject
