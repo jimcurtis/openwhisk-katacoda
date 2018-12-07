@@ -44,6 +44,10 @@
             {
                 "title": "Step 4 - Eventing Component",
                 "text": "04-eventing-component.md"
+            },
+            {
+                "title": "Step 5 - Releasing & Traffic Splitting",
+                "text": "05-releasing-traffic-splitting.md"
             }
         ],
         "intro": {
