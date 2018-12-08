@@ -64,7 +64,7 @@ If we now apply our source YAML, we will see a pod created which is an instance 
 
 ``oc apply -f eventing/021-source.yaml``{{execute}}
 
-Now, go over to your OpenShift Web Console tab/window and choose Deployments to see created deployment for the source.
+Now, go over to your OpenShift Web Console tab/window to see created deployment for the source.
 
 The EventSource is up and running and the final piece of the Knative Eventing is how we wire everything together.
 This is done via a Subscription.
