@@ -76,10 +76,9 @@ In short:
 1. A Route makes our application available under a hostname.
 2. A Configuration generates a Revision generates a Deployments generates Pods generates our Container.
 
-Now, to see that the service is actually running, we're going to send a request against it. To do so,
-we'll get the domain of the KService:
+Now, wait for the service to become available with:
 
-``oc get kservice``{{execute}}
+``until $(oc get kservice | grep True > /dev/null); do sleep 1; done``{{execute}}
 
 And we will need the ingress gateway IP address which we can get via:
 
