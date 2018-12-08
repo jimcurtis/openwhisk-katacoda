@@ -30,7 +30,13 @@ to get to the cosole for your project.
 
 ![My Projects](assets/my-projects.png)
 
-Now, go back to the Terminal tab and set the CLI to point to the newly created project with this command:
+On the left side of the screen choose the Monitoring tab.
+
+![Monitoring](assets/monitoring.png)
+
+Now, go back to the Terminal tab wait for the Knative install to complete and offer a command prompt.
+
+Set the CLI to point to the newly created project with this command:
 
 ``oc project myproject``{{execute}}
 
