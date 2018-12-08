@@ -55,11 +55,11 @@ We create the KService by, you guessed it, applying the file through `oc`:
 ``oc apply -f serving/010-service.yaml``{{execute}}
 
 Now the build will eventually start running. You can see through the OpenShift console, how a job is created
-that orchestrates the build.  Go back to your OpenShift Web Console tab/window and on the left-hand side choose the
-Application menu and choose Pods.  This will show you the pods being created for the build.
+that orchestrates the build.  Go back to your OpenShift Web Console tab/window and it should still be on the Monitoring
+view.  This will show you the pods being created for the build.
 
-Eventually, an OpenShift Build is created and builds the image, as can be seenon the Builds page.  To see the build
-on the OpenShift Web Console, go to the left-hand side and choose the Builds menu.
+Eventually, an OpenShift Build is created and builds the image, as can be seen in the Builds section of the Monitoring
+view.
 
 Once the build finishes, Knative will produce a couple of entities to actually deploy the application.
 The KService consists of two parts: A **Route** and a **Configuration**. The `configuration` is directly apparent
