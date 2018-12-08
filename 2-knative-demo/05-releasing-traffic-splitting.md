@@ -51,8 +51,8 @@ Apply these changes via:
 
 ``oc apply -f serving/012-service-traffic.yaml``{{execute}}
 
-The system will now evenly divide the traffic between the two deployed versions. Using Kiali, we can verify that the 
-traffic to the new version is indeed not causing any errors.
+The system will now evenly divide the traffic between the two deployed versions. You can go over to your Monitoring on
+your OpenShift Web Console tab/window to veritfy things.
 
 Since we've now verified that the new version should indeed be rolled out completely, we can go ahead and move 100% 
 of the traffic over. We do that by making "dumpy-00002" our current and only revision, and drop "dumpy-00001" completely. 
@@ -71,6 +71,8 @@ diff
 Apply these changes via:
 
 ``oc apply -f serving/013-service-final.yaml``{{execute}}
+
+And watch things change via your OpenShift Web Console tab/window.
 
 We've now successfully exchanged `v1` of our application with `v2` in a completely controlled manner and could've 
 rolled back immediately at any point in time.
