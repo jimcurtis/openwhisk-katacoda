@@ -1,8 +1,15 @@
 ### The Eventing component
 
 The previous steps showed you how to invoke a KService from an HTTP request, in that case submitted via curl.
-Knative Eventing is all about how you can invoke those applications in response to other events such as those received from message brokers or external applications.
-In this part of the demo we are going to show how you can receive Kubernetes platform events and route those to a Knative Serving application.
+Knative Eventing is all about how you can invoke those applications in response to other events such as those received 
+from message brokers or external applications.
+
+In this part of the demo we are going to show how you can receive Kubernetes platform events and route those to a Knative 
+Serving application.  But before we do this we are going to patch the Knative autoscaler so that it will react faster when
+scaling down our application deployments.  To do this, we will choose the minimum values for both the 
+'scale-to-zero-grace-period' and the 'scale-to-zero-threshold' configuration parameters and use the 'oc patch' command.
+
+``oc patch -n knative-serving configmap/config-autoscaler -p '{"data":{"scale-to-zero-grace-period":"30s", "scale-to-zero-threshold":"60s"}}'``{{execute}}
 
 Knative Eventing is built on top of three primitives:
 * Event Sources
